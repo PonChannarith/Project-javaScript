@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@300;700&family=Nokora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@300;700&family=Nokora&display=swap");
+::root{
+    --color-red:red;
+    --color-pink:rgb(248, 19, 194);
+    --color-green:green;
+    --color-yellow:yellow;
+    --color-blue:blue;
+    --color-black:black;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+}
+.menu img{
+    width: 60px;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.menu span{
+    color: white;
+    padding: 1px 5px ;
+    font-size: 17px;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.menu span:hover{
+    opacity: 0.9;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+    display: block;
+    transition: all 0.3s;
+    border-radius: 3px;
+    margin-top: 7px;
+}
+.menu ul li:first-child a{
+    background-color: blue;
+
+}
+.menu ul li a:hover{
+    background-color:rgb(28, 28, 194) ;
+}
+.menu ul input{
+    margin-left: 10px;
+    font-size: 20px
+}
+.path{
+    padding: 10px 15px;
+    color: white;
+    width: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+    clip-path: polygon(0 1%, 80% 0%, 100% 100%, 0% 100%);
+}
+.content{
+    padding: 15px;
+    width: 100%;
+}
+.content figure{
+    width: 100%;
+    box-shadow: 4px 5px 6px 5px  #bdadad;
+}
+.content figure{
+    transition:  all 0.3s;
+}
+.content figure:hover{
+    transform: scale(1.04);
+}
+.content figure .img{
+    width: 100%;
+}
+.content figure .img img{
+    width: 100%;
+}
+.content figure .txt{
+    padding: 3px;
+    width: 100%;
+}
+.content figure .txt .star .fa-star{
+    color: gold;
+    font-size: 17px;
+}
+.content figure .txt .star{
+    width: 100%;
+}
+
+.content figure .txt  .big{
+    font-size: 20px;
+}
+.content figure .txt  .big del{
+    color: red;
+}
+.content figure .txt  .big b{
+    color: blue;
+}
+.content figure .txt .small{
+    font-size: 20px;
+}
+.small-detail{
+    width: 100%;
+    padding: 15px;
+}
+.small-detail figure{
+    width: 100%;
+    box-shadow: 4px 5px 6px 5px  #bdadad;
+}
+.small-detail figure{
+    transition: all 0.3s;
+}
+.small-detail figure .img{
+    width: 100%;
+}
+.small-detail figure:hover{
+    
+    transform: scale(1.03);
+
+}
+.small-detail figure .img img{
+    width: 100%;
+}
+.small-detail figure .txt {
+    padding-left: 5px;
+}
+.small-detail figure .txt .star{
+    color: gold;
+} 
+.small-detail figure .txt{
+    font-size: 13px;
+}
+.small-detail figure .txt .big del{
+    color: red;
+}
+.small-detail figure .txt .big b{
+    color: blue;
+}
+.login-box{
+    width: 50%;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: none;
+    position:relative;
+}
+.login-box h1{
+    font-size: 35px;
+    color: rgb(24, 22, 22);
+    font-family: 'Hanuman';
+    text-align: center;
+    text-shadow: 3px 4px 5px beige;
+}
+.login-box form{
+    background-color: rgb(217, 217, 238);
+    width: 98%;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+.login-box form label{
+    color: black;
+    font-size: 20px;
+    font-family: 'Hanuman';
+    padding-top: 10px;
+}
+.login-box form input{
+    width: 98%;
+    color: black;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Hanuman';
+
+}
+.login-box form .btn{
+    width: 80px;
+    margin-top: 10px;
+    margin: 10px;
+}
+.fa-times-circle{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.Create-box{
+    background-color: rgb(12, 141, 12);
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.Create-box h1{
+    font-family: 'Hanuman';
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 4px 5px beige;
+}
+.Create-box .fa-times-circle {
+    right: 5px;
+    padding: 5px;
+    position: absolute;
+}
+.Create-box form{
+    background-color: rgb(113, 231, 102);
+    width: 98%;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+.Create-box label{
+    font-size: 20px;
+    color:black;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: 'Hanuman';
+}
+.Create-box input{
+    padding: 10px 15px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Hanuman';
+    width: 98%;
+}
+
+.Create-box .btn{
+    width: 80px;
+    height: 60px;
+    margin:15px 5px;
+}
+/* span .fa{
+    margin-left: 80px;
+} */
+.menu-left{
+    background-color: orangered;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    left: -100%;
+    transition: all 0.4s;
+    
+}
+.menu-left ul{
+    list-style-type: none;
+    width: 100%;
+}
+.menu-left ul li {
+    display:flex ;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: all 0.3s;
+}
+.menu-left ul li:hover{
+    background-color: greenyellow;
+}
+.menu-left ul li:first-child{
+    background-color: blue;
+    margin: 0 auto;
+}
+.menu-left ul li:first-child:hover{
+    background-color: greenyellow;
+}
+.menu-left ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    font-family: 'Hanuman';
+    font-weight: bold;
+}
+/* Medai repornsive */
+/* laptop */
+@media (max-width: 1399.98px) {
+}
+/* ipad pro */
+@media (max-width: 1199.98px) {
+    .col-8 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .col-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .col-4-in{
+        width: 33.33333%;
+    }
+}
+/* ipad */
+@media (max-width: 991.98px) {
+    .menu {
+        width: 50%;
+    }
+    .menu ul li a {
+        font-size: 13px;
+    }
+    .col-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .col-4-in{
+        width: 50%;
+    }
+    .col-3{
+        flex: 0 0  auto;
+        width: 33.33333%;
+    }
+    .col-3{
+        flex: 0 0  auto;
+        width: 100%;
+    }
+}
+/* Mobile phone */
+@media (max-width: 767.98px) {
+    .menu img {
+        width: 40px;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu span{
+        display:block ;
+        padding-left: 260px;
+        padding-top: 10px;
+    }
+    .col-8 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+}
+/* Mobile phone */
+@media (max-width: 575.98px) {
+}
